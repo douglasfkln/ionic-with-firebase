@@ -4,22 +4,22 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import * as firebase from 'firebase';
 
-import { HomePage } from '../pages/home/home';
+import { ListaCarrosPage } from '../pages/lista-carros/lista-carros';
 
 const config = {
-  apiKey: "AIzaSyAyJQhLLwEfd2gmH3wtd5MVViiQo8FZkI8",
-  authDomain: "ionic-with-firebase-96285.firebaseapp.com",
-  databaseURL: "https://ionic-with-firebase-96285.firebaseio.com",
-  projectId: "ionic-with-firebase-96285",
-  storageBucket: "ionic-with-firebase-96285.appspot.com",
-  messagingSenderId: "281913452177"
+  apiKey: "AIzaSyBvH1HZQRx7sIfWJ0uoGgQGB82F5R8QqeM",
+  authDomain: "ionic-with-firebase2.firebaseapp.com",
+  databaseURL: "https://ionic-with-firebase2.firebaseio.com",
+  projectId: "ionic-with-firebase2",
+  storageBucket: "ionic-with-firebase2.appspot.com",
+  messagingSenderId: "814345672414"
 };
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = ListaCarrosPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
